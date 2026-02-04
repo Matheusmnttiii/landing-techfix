@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechFix | Assistência & Serviços</title>
+  <meta name="description" content="Landing page profissional para serviços: manutenção, formatação, upgrades e redes. Orçamento no WhatsApp." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar" id="topo">
+    <div class="container topbar__inner">
+      <a class="brand" href="#topo">
+        <span class="brand__logo">TF</span>
+        <span class="brand__text">
+          <strong>TechFix</strong>
+          <small>Assistência • Redes • Suporte</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#planos">Planos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav__cta" href="#contato">Orçamento</a>
+      </nav>
+
+      <button class="btn btn--ghost navToggle" type="button" aria-expanded="false" aria-controls="mobileNav">
+        Menu
+      </button>
+    </div>
+
+    <div id="mobileNav" class="mobileNav container" hidden>
+      <a href="#servicos">Serviços</a>
+      <a href="#planos">Planos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contato">Orçamento</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="pill">⚡ Atendimento rápido • Garantia • Suporte</span>
+          <h1>Seu computador e rede <span class="accent">funcionando liso</span> — sem dor de cabeça.</h1>
+          <p>
+            Manutenção, formatação, upgrades e configuração de rede. Orçamento rápido no WhatsApp
+            e atendimento com transparência.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#servicos">Ver serviços</a>
+            <a class="btn btn--soft" id="ctaWhatsHero" href="#" target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+
+          <div class="proof">
+            <div class="proof__item">
+              <strong>+120</strong>
+              <span>Atendimentos</span>
+            </div>
+            <div class="proof__item">
+              <strong>4,9★</strong>
+              <span>Avaliações</span>
+            </div>
+            <div class="proof__item">
+              <strong>24–48h</strong>
+              <span>Média</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroCard" aria-label="Cartão com benefícios">
+          <div class="heroCard__head">
+            <span class="chip">Orçamento</span>
+            <span class="chip chip--green">Garantia</span>
+          </div>
+
+          <div class="heroCard__body">
+            <h3>O que você recebe</h3>
+            <ul class="checklist">
+              <li>Diagnóstico claro (sem enrolação)</li>
+              <li>Checklist de etapas e prazos</li>
+              <li>Recomendações custo-benefício</li>
+              <li>Suporte pós-serviço</li>
+            </ul>
+
+            <div class="miniCtas">
+              <a class="miniBtn" href="#planos">Ver planos</a>
+              <a class="miniBtn miniBtn--accent" id="ctaWhatsCard" href="#" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Serviços</h2>
+          <p>Escolha o que você precisa — e chame no WhatsApp com a opção selecionada.</p>
+        </div>
+
+        <div class="serviceGrid" id="serviceGrid"></div>
+      </div>
+    </section>
+
+    <section id="planos" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Planos</h2>
+          <p>Para pessoas e pequenos negócios que precisam de suporte recorrente.</p>
+        </div>
+
+        <div class="plans">
+          <article class="plan">
+            <h3>Básico</h3>
+            <p class="muted">Ideal para manutenção pontual.</p>
+            <div class="price">R$ 59<span>/mês</span></div>
+            <ul class="list">
+              <li>1 atendimento remoto</li>
+              <li>Limpeza de software</li>
+              <li>Otimização básica</li>
+            </ul>
+            <button class="btn btn--soft planBtn" data-plan="Básico" type="button">Quero este</button>
+          </article>
+
+          <article class="plan plan--featured">
+            <div class="tag">Mais escolhido</div>
+            <h3>Pro</h3>
+            <p class="muted">Para uso diário e trabalho.</p>
+            <div class="price">R$ 99<span>/mês</span></div>
+            <ul class="list">
+              <li>2 atendimentos remotos</li>
+              <li>Monitoramento e prevenção</li>
+              <li>Suporte via WhatsApp</li>
+            </ul>
+            <button class="btn planBtn" data-plan="Pro" type="button">Quero este</button>
+          </article>
+
+          <article class="plan">
+            <h3>Empresa</h3>
+            <p class="muted">Para equipes e redes locais.</p>
+            <div class="price">R$ 199<span>/mês</span></div>
+            <ul class="list">
+              <li>4 atendimentos (remoto/presencial*)</li>
+              <li>Configuração de rede</li>
+              <li>Prioridade de suporte</li>
+            </ul>
+            <button class="btn btn--soft planBtn" data-plan="Empresa" type="button">Quero este</button>
+          </article>
+        </div>
+
+        <small class="muted">* Exemplo demonstrativo. Ajuste preços/itens conforme sua oferta.</small>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Depoimentos</h2>
+          <p>Prova social para aumentar conversão.</p>
+        </div>
+
+        <div class="testimonials">
+          <article class="tCard">
+            <p>“Meu PC ficou rápido de novo. Atendimento muito claro e direto.”</p>
+            <strong>— Ana V.</strong>
+          </article>
+          <article class="tCard">
+            <p>“Resolveram a rede aqui em casa e parou de cair. Recomendo demais.”</p>
+            <strong>— Carlos M.</strong>
+          </article>
+          <article class="tCard">
+            <p>“Formatação + backup sem perder nada. Passou confiança.”</p>
+            <strong>— Juliana R.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Perguntas comuns (ótimo para reduzir dúvidas e aumentar conversão).</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Quanto tempo demora?</summary>
+            <p class="muted">Depende do serviço. Em geral, diagnósticos e ajustes simples saem em 24–48h.</p>
+          </details>
+          <details>
+            <summary>Vocês fazem orçamento?</summary>
+            <p class="muted">Sim! Você chama no WhatsApp, explica o problema e eu retorno com estimativa.</p>
+          </details>
+          <details>
+            <summary>Atende empresa?</summary>
+            <p class="muted">Sim. Configuração de rede, suporte recorrente e manutenção preventiva.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container twoCols">
+        <div>
+          <h2>Contato</h2>
+          <p>Me diga o que você precisa e eu te respondo o mais rápido possível.</p>
+
+          <div class="contactCard">
+            <div class="contactRow">
+              <span class="ico">WA</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <small class="muted">Orçamento e dúvidas</small>
+              </div>
+            </div>
+            <a class="btn" id="ctaWhatsFooter" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <small class="muted">Troque o número no <code>script.js</code>.</small>
+          </div>
+        </div>
+
+        <form class="form" onsubmit="return false;">
+          <h3>Mensagem rápida</h3>
+
+          <label>
+            Seu nome
+            <input id="leadName" type="text" placeholder="Ex: Matheus" />
+          </label>
+
+          <label>
+            Qual é o problema?
+            <textarea id="leadProblem" rows="4" placeholder="Ex: Meu notebook está lento e travando."></textarea>
+          </label>
+
+          <label class="row">
+            <span>Tipo</span>
+            <select id="leadType">
+              <option value="Manutenção">Manutenção</option>
+              <option value="Formatação">Formatação</option>
+              <option value="Upgrade">Upgrade</option>
+              <option value="Rede/Wi-Fi">Rede/Wi-Fi</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </label>
+
+          <button class="btn btn--soft" id="sendLead" type="button">Enviar pelo WhatsApp</button>
+          <small class="muted">Abre o WhatsApp com a mensagem pronta.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="floatingWA" id="floatingWA" href="#" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    WhatsApp
+  </a>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 TechFix</span>
+      <span class="muted">Feito por Matheus • HTML/CSS/JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
